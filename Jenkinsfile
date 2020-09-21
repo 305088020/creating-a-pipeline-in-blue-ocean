@@ -9,7 +9,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install'
+        sh '''npm install nrm -g
+nrm use taobao
+npm install'''
       }
     }
 
